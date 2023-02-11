@@ -1,0 +1,101 @@
+/* 
+
+    CSS Guide
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main Hero Image
+    5. Features
+    6. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+
+.hidden {
+    display: none;
+}
+
+#container {
+    margin: 0 auto;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    padding: 0 auto;
+}
+
+
+
+/* 2. ---Grid--- */
+
+/* this is the exact same grid used in Adobe XD, we have recreated 
+the grid using CSS. It is a class becasue we will use multiple grids */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 39px);
+	grid-column-gap: 5px;
+}
+
+/* 3. ---Header--- */
+
+#header-con {
+    grid-column: 1/-1;
+    background-color: #E0E0E0;
+}
+
+#logo{
+    height:100px;
+    width: 100px;
+    background-color: rgb(171, 171, 171);
+    grid-column: 2/3;
+    margin: 10px;
+}
+
+#main-nav {
+	grid-column: 3/11;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+
+#main-nav li {
+	display: inline;
+	margin-right: 90px;
+	font-size: 30px;
+}
+
+/* 4. ---Main Hero Image--- */
+
+#hero-image {
+    width: 320px;
+    height: 220px;
+    background-color: rgb(63, 63, 63);
+    grid-column: 1/-1;
+}
+
+#hero-text {
+    background-color: aqua;
+}
+
+#hero-text h2 {
+    display: inline;
+}
+
+
+/* 5. ---Products--- */
+
+
+
+/* 6. ---About Us--- */
+
+
+
+/* 7. ---Brand Affiliates--- */
+
+
+
+/* 8. ---Footer--- */
+
