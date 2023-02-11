@@ -1,0 +1,88 @@
+Desktop Measurements
+
+h2:70px   p:30px  (Typically)
+
+1920 x 1080
+
+---Main Header---
+1920px x 200px
+
+logo: 140px x 140px
+
+nav columns: 3/11
+
+social media columns: 9/-1
+
+
+---Hero Slideshow---
+
+Hero img: 1920px x 875px
+
+
+---Flavours---
+
+product img box: 530px x 575
+
+
+---About Us---
+
+bg img: 1920px x 1080px
+
+text box: 810px x 720px
+
+
+---Brand Affiliates---
+
+logo box: 390px x 140px (placeholder - subject to change)
+
+
+---Footer---
+
+Contact Us: 2/3
+
+Quick Links: 4/5
+
+Newsletter: 7/-1
+
+
+
+
+===================================================================
+
+
+Mobile Measurements
+
+320px x 760px
+
+h2: 30px  p: 15px (typically)
+
+
+---Header---
+
+360 x 73
+
+logo: 50 x 50
+
+
+---Hero Slideshow---
+
+hero img: 360 x 220
+
+
+---Flavours---
+
+product box: 360 x 160
+
+
+---About---
+
+bg img: 360 x 595
+
+
+---Brand Affiliates---
+
+company logos: 138 x 138 (subject to change)
+
+
+---Footer---
+
