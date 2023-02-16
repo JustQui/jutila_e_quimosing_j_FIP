@@ -34,7 +34,9 @@ p {
     font-family: 'Rajdhani', sans-serif;
 }
 
-
+a {
+	text-decoration: none;
+}
 
 /* 2. ---Grid--- */
 
@@ -54,25 +56,48 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     background-color: #E0E0E0;
 }
 
-#logo{
-    height:100px;
-    width: 100px;
-    background-color: rgb(171, 171, 171);
-    grid-column: 2/3;
+#logo {
+    grid-column: 2/4;
     margin: 10px;
 }
 
+#logo img {
+    position: absolute;
+    width: 265px;
+    height: 90.75px;
+}
+
 #main-nav {
-	grid-column: 3/11;
+	grid-column: 4/10;
 	padding-bottom: 0;
 	margin-bottom: 0;
+    margin-left: 130px;
 	margin-top: 50px;
 }
 
-#main-nav li {
+#main-nav ul li {
 	display: inline;
-	margin-right: 90px;
-	font-size: 30px;
+	margin-right: 75px;
+    padding-bottom: 10px;
+	font-size: 25px;
+}
+
+#main-nav ul li a:hover {
+    border-bottom: 3px solid #21305F;
+    padding-bottom: 2px;
+	transition: all 200ms ease-in;
+}
+
+#main-nav ul a {
+    color: #21305F;
+}
+
+#social-media {
+    grid-column: 11/-1;
+}
+#social-media img {
+    display: inline;
+    margin-top: 35px;
 }
 
 /* 4. ---Main Hero Image--- */
