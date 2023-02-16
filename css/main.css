@@ -26,6 +26,14 @@
     padding: 0 auto;
 }
 
+h1 h2 h3{
+    font-family: 'Play', sans-serif;
+}
+
+p {
+    font-family: 'Rajdhani', sans-serif;
+}
+
 
 
 /* 2. ---Grid--- */
