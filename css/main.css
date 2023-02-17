@@ -94,16 +94,17 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 }
 
 #main-nav {
-	grid-column: 4/10;
+	grid-column: 4/11;
+    text-align: center;
 	padding-bottom: 0;
 	margin-bottom: 0;
-    margin-left: 130px;
+    margin-left: 50px;
 	margin-top: 50px;
 }
 
 #main-nav ul li {
 	display: inline;
-	margin-right: 70px;
+	margin-right: 60px;
     padding-bottom: 10px;
 	font-size: 25px;
     font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
@@ -141,7 +142,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 #hero-text2 {
     margin-top: 200px;
-    grid-column: 5/10;
+    grid-column: 6/10;
 }
 
 #hero-text2 h3 {
@@ -166,14 +167,13 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 }
 
 #hero-text input[type="submit"] {
-    text-align: center;
     color: white;
     background-color: darkgrey;
     border: 3px;
     border-style: solid;
     border-radius: 5px;
     border-color: grey;
-    grid-column: 7/8;
+    grid-column: 7/9;
     height: 50px;
     font-size: 22px;
     transition: all 200ms ease-in;
@@ -371,4 +371,96 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 
 /* 8. ---Footer--- */
+
+#main-footer {
+    height: 530px;
+    background-color: #202C59;
+    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer-contact {
+    grid-column: 2/4;
+    margin-top: 50px;
+    color: #D7F9FF;
+}
+
+#footer-contact h3 {
+    font-size: 42px;
+}
+
+#footer-contact p {
+    font-size: 24px;
+}
+
+#footer-links {
+    grid-column: 5/7;
+    margin-top: 32px;
+    color: #D7F9FF;
+}
+
+#footer-links li {
+    list-style: none;
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+
+#footer-links a {
+    color: #D7F9FF;
+}
+
+#footer-links a:hover {
+    border-bottom: 3px solid #FFF;
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#footer-links h4 {
+    margin-left: 38px;
+    font-size: 42px;
+}
+
+#newsletter {
+    grid-column: 9/-1;
+    margin-top: 25px;
+    color: #fff;
+}
+
+#newsletter h4 {
+    margin-top: 55px;
+    font-size: 56px;
+}
+
+#newsletter p {
+    font-size: 24px;
+}
+
+#newsletter input {
+	width: 450px;
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-bottom: 65px;
+    font: inherit;
+	transition: all 200ms ease-in;
+}
+
+#newsletter input {
+	font-size: 20px;
+}
+
+#newsletter input[type="submit"] {
+	width: 478px;
+	padding: 12px;
+	background-color: #94D8FF;
+	color: #202C59;
+	border: none;
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: #0E75B0;
+    border-radius: 10px;
+}
+
+/* Shop Page */
 

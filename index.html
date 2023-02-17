@@ -29,10 +29,10 @@
                 </nav>
             </div>
             <div id="social-media">
-                <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="62" height="62"></a>
-                <a id="fsacebook" href="#"><img src="img/facebook-logo.png"          alt="facebook logo" width="62" height="62"></a>
-                <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="62" height="62"></a>
-                <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="62" height="62"></a>
+                <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="52" height="52"></a>
+                <a id="fsacebook" href="#"><img src="img/facebook-logo.png"          alt="facebook logo" width="52" height="52"></a>
+                <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="52" height="52"></a>
+                <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="52" height="52"></a>
             </div>
         </div>
 
@@ -62,21 +62,20 @@
                 <hr class="title-line">
                 <div id="product-1" class="product-box box-color3">
                     <img src="img/red-drink.jpg" width="400" height="450">
-                    <h4><a href="#">Strawberry Sun</a></h4>
+                    <h4><a href="products.html">Strawberry Sun</a></h4>
                 </div>
 
                 <div id="product-2" class="product-box box-color3">
                     <img src="img/yellow-drink.jpg" width="400" height="450">
-                    <h4><a href="#">Lunar Lemon</a></h4>
+                    <h4><a href="products.html">Lunar Lemon</a></h4>
                 </div>
 
                 <div id="product-3" class="product-box box-color3">
                     <img src="img/multi-drink.jpg" width="400" height="450">
-                    <h4><a href="#">Orange Blast</a></h4>
+                    <h4><a href="products.html">Orange Blast</a></h4>
                 </div>
 
                 <input name="submit" type="submit" value="View More">
-
             </section>
 
             <section id="about-us" class="grid">
@@ -122,15 +121,22 @@
             <div id="main-footer" class="grid">
 
                 <div id="footer-contact">
-                    <h2>Contact Us</h2>
-                    <p>address</p>
-                    <p>phone number</p>
-                    <p>email</p>
-                    <div id="social-media"></div>
+                    <h3>Contact Us</h3>
+                    <p>123 Place St.,
+                        City, PR, H0H 0H0
+                        Canada</p>
+                    <p>(123) 456-7890</p>
+                    <p>nohelp@orbitz.com</p>
+                    <div id="social-media">
+                        <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="42" height="42"></a>
+                        <a id="fsacebook" href="#"><img src="img/facebook-logo.png"          alt="facebook logo" width="42" height="42"></a>
+                        <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="42" height="42"></a>
+                        <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="42" height="42"></a>
+                    </div>
                 </div>
 
                 <div id="footer-links">
-                    <h2>Quick Links</h2>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -139,10 +145,15 @@
                     </ul>
                 </div>
 
-                <div id="newsletter"></div>
-                <h2>Thirsty for more?</h2>
+                <div id="newsletter">
+                <h4>Thirsty for more?</h4>
                 <p>Quench your thirst with regular updates delivered stright to your inbox!</p>
-                <input type="text" id="email" name="emailaddress" placeholder="Email Address">
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" placeholder="Enter your email here..">
+                    <br>
+                    <input name="submit" type="submit" value="SIGN ME UP!">
+                </form>
+                </div>
             </div>
         </footer>
 
