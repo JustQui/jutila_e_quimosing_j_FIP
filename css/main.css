@@ -464,3 +464,100 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 /* Shop Page */
 
+#product-con {
+    width: 1920px;
+    height: 1000px;
+    background-color: #ffffff;
+    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prod-img {
+    grid-column: 2/12;
+    margin-left: 200px;
+    padding-left: 30px;
+    letter-spacing: 70px;
+    align-items: center;
+}
+
+#product-con h2 {
+    grid-column: 5/11;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 64px;
+    color: rgb(223, 146, 5);
+}
+
+#product-1-shop {
+    grid-column: 3/6;
+    text-align: center;
+    margin-left: 100px;
+}
+
+#product-1-shop h3 {
+    font-size: 36px;
+    color: red;
+}
+
+#product-1-shop p {
+    font-size: 18px
+}
+
+#product-1-shop a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-1-shop a {
+    color: red;
+}
+
+#product-2-shop {
+    grid-column: 6/9;
+    text-align: center;
+    margin-left: 70px;
+}
+
+#product-2-shop h3 {
+    font-size: 36px;
+    color: rgb(170, 170, 0);
+}
+
+#product-2-shop p {
+    font-size: 18px
+}
+
+#product-2-shop a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-2-shop a {
+    color: rgb(170, 170, 0);
+}
+
+#product-3-shop {
+    grid-column: 9/12;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#product-3-shop h3 {
+    font-size: 36px;
+    color:rgb(204, 133, 0);
+}
+
+#product-3-shop p {
+    font-size: 18px
+}
+
+#product-3-shop a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-3-shop a {
+    color: rgb(204, 133, 0);
+}
