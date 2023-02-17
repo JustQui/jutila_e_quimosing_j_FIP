@@ -32,6 +32,14 @@
     border-radius: 10px;
 }
 
+.box-color3 {
+    color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+    height: 50px;
+	margin: 0;
+    border-radius: 10px;
+}
+
 #container {
     margin: 0 auto;
     width: 1920px;
@@ -50,6 +58,10 @@ p {
 
 a {
 	text-decoration: none;
+}
+
+.title-line {
+	display: none;
 }
 
 /* 2. ---Grid--- */
@@ -94,6 +106,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 	margin-right: 70px;
     padding-bottom: 10px;
 	font-size: 25px;
+    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main-nav ul li a:hover {
@@ -152,30 +165,121 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#scroll-button {
+#hero-text input[type="submit"] {
     text-align: center;
-    color: #fff;
+    color: white;
+    background-color: darkgrey;
     border: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #fff;
+    border-color: grey;
     grid-column: 7/8;
     height: 50px;
-    font-size: 20px;
+    font-size: 22px;
+    transition: all 200ms ease-in;
 }
 
-#scroll-button p {
-    margin-top: 15px;
-    letter-spacing: 1px;
-    font-family: 'Rajdhani' Verdana, Geneva, Tahoma, sans-serif;
+#hero-text input[type="submit"]:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
 }
 
 /* 5. ---Products--- */
 
 #products {
     background-color: #FFFDCF;
-    height: 720px;
+    height: 780px;
     grid-column: 1/-1;
+}
+
+#products h3 {
+    grid-column: 6/9;
+    text-align: center;
+    color: rgb(204, 133, 0);
+    font-size: 42px;
+    height: 38px;
+    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-box {
+    width: 400px;
+    height: 500px;
+    border: 2px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 40px;
+}
+
+#product-1 {
+    grid-column: 2/4;
+    margin-left: 125px;
+}
+
+#product-1 a:hover {
+    border-bottom: 3px solid rgb(204, 133, 0);
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-1 a {
+    color: #fff;
+}
+
+
+#product-2 {
+    grid-column: 5/7;
+    margin-left: 132px;
+}
+
+#product-2 a:hover {
+    border-bottom: 3px solid rgb(204, 133, 0);
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-2 a {
+    color: #fff;
+}
+
+#product-3 {
+    grid-column: 8/11;
+    margin-left: 152px;
+}
+
+#product-3 a:hover {
+    border-bottom: 3px solid rgb(204, 133, 0);
+    padding-bottom: 2px;
+    transition: all 200ms ease-in;
+}
+
+#product-3 a {
+    color: #fff;
+}
+
+#products input[type="submit"] {
+    text-align: center;
+    color: white;
+    background-color: rgb(204, 133, 0);
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    grid-column: 6/9;
+    height: 65px;
+    font-size: 32px;
+    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 200ms ease-in;
+}
+
+#products input[type="submit"]:hover {
+    background-color: #fff;
+    color: rgb(204, 133, 0);
+    border-radius: 10px;
 }
 
 /* 6. ---About Us--- */
