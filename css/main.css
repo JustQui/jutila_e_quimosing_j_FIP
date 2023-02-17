@@ -79,7 +79,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 #header-con {
     grid-column: 1/-1;
-    background-color: rgb(205, 255, 255);
+    background-color: rgb(218, 255, 255);
 }
 
 #logo {
@@ -284,6 +284,63 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 /* 6. ---About Us--- */
 
+#about-us {
+    height: 760px;
+    background-color: #32416d;
+}
+
+#bg-image {
+    margin-left: 110px;
+}
+
+#about-text {
+    grid-column: 8/-1;
+    margin-top: 100px;
+    height: 440px;
+    border-style: solid;
+    border: 3px;
+    border-color: grey;
+    border-radius: 10px;
+    background-color: rgb(218, 255, 255);
+}
+
+#about-text h4 {
+    grid-column: 1/5;
+    margin-left: 20px;
+    font-size: 54px;
+    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(204, 133, 0);
+    height: 50px;
+}
+
+#about-text p {
+    grid-column: 1/6;
+    margin-left: 20px;
+    font-size: 28px;
+    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about-us input[type="submit"] {
+    text-align: center;
+    color: white;
+    background-color: rgb(204, 133, 0);
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    grid-column: 2/5;
+    margin-top: 50px;
+    height: 65px;
+    font-size: 32px;
+    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 200ms ease-in;
+}
+
+#about-us input[type="submit"]:hover {
+    background-color: #fff;
+    color: rgb(204, 133, 0);
+    border-radius: 10px;
+}
 
 
 /* 7. ---Brand Affiliates--- */
