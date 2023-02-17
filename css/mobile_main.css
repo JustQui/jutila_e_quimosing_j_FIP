@@ -129,6 +129,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     padding-right: 20px;
     margin:0;
     color: #292e56;
+    font-size: 20px
 }
 
 
@@ -142,9 +143,10 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 #products h2 {
     grid-column: 1/-1;
-    padding: 20px;
+    margin-left: 30px;
     font-size: 30px;
     font-family: play;
+    color:#d85c38
 }
 
 .product-box {
@@ -156,6 +158,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 .product-box h2 {
     margin-top: 120px;
     margin-bottom: 0px;
+    color:rgb(63, 63, 63);
 }
 
 .button {
@@ -172,6 +175,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     background-color: transparent;
     border-style: solid;
     border-color: #d85c38;
+    transition: 0.3s;
 }
 
 #product-1 {
@@ -179,14 +183,32 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     background-image: url("../img/red-drink_mobile-crop.jpg");
 }
 
+#product-1 h2 {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    color: maroon
+}
+
 #product-2 {
     background-color: #292e56;
     background-image: url("../img/yellow-drink_mobile-crop.jpg");
 }
 
+#product-2 h2 {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    color: teal;
+}
+
 #product-3 {
     background-color: #292e56;
     background-image: url("../img/multi-drink_mobile-crop.jpg");
+}
+
+#product-3 h2 {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    color: #d85c38;
 }
 
 
@@ -315,10 +337,12 @@ input, textarea {
 
 .button-2:hover {
     background-color: #d6f9ff;
+    transition: 0.3s;
 }
 
 a:hover {
     color:#292e56;
+    transition: 0.3s;
 }
 
 
