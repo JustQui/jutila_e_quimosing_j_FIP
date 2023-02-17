@@ -12,71 +12,82 @@
 <body>
 
     <div id="container">
-
+        <h1 class="hidden">Welcome to the revolutionary drink of Orbitz</h1>
         <div id="header-con" class="grid">
-            <div id="logo"></div>
+            <div id="logo">
+                <a id="orbitz-logo" href="index.html"><img src="img/Orbitz-full-logo.png" alt="Orbitz-logo"></a>
+            </div>
             <div id="main-nav">
+                <h2 class="hidden">Main Navigation</h2>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#"><b>Home</b></a></li>
+                        <li><a href="products.html"><b>Products</b></a></li>
+                        <li><a href="#"><b>About Us</b></a></li>
+                        <li><a href="#"><b>Support</b></a></li>
                     </ul>
                 </nav>
             </div>
             <div id="social-media">
-
+                <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="52" height="52"></a>
+                <a id="fsacebook" href="#"><img src="img/facebook-logo.png"          alt="facebook logo" width="52" height="52"></a>
+                <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="52" height="52"></a>
+                <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="52" height="52"></a>
             </div>
         </div>
 
         <main>
-            <div id="hero" class="grid">
-                <div id="hero-image">
-                    <div id="hero-text" class="grid">
-                        <h3>Revolutionary Drink</h3>
-                        <h2>Orbitz</h2>
-                        <p>Lorem ipsum dolor sit amet,
+            <section id="hero" class="grid">
+                <div id="hero-image" class="box-color">
+                    <div id="hero-text" class="grid box-color">
+                        <div id="hero-text2" class="box-color2">
+                            <h3>Revolutionary Drink</h3>
+                            <h4>Orbitz</h4>
+                            <p>Lorem ipsum dolor sit amet,
                             consetetur sadipscing elitr, sed
                             diam nonumy eirmod tempor
                             invidunt ut labore et dolore
                             magna aliquyam erat, sed diam
                             voluptua.</p>
+                        </div>
+                        <input name="submit" type="submit" value="Scroll">
                     </div>
                 </div>
-                <div id="scroll-button"></div>
-            </div>
+            </section>
 
             <section id="products" class="grid">
 
-                <h2>Flavours</h2>
-                <div id="product-1" class="product-box">
-                    <div class="box-color-1"></div>
-                    <h2>Strawberry Sun</h2>
+                <h3>Flavours</h3>
+                <br>
+                <hr class="title-line">
+                <div id="product-1" class="product-box box-color3">
+                    <img src="img/red-drink.jpg" width="400" height="450">
+                    <h4><a href="products.html">Strawberry Sun</a></h4>
                 </div>
 
-                <div id="product-2" class="product-box">
-                    <div class="box-color-1"></div>
-                    <h2>Lunar Lemon</h2>
+                <div id="product-2" class="product-box box-color3">
+                    <img src="img/yellow-drink.jpg" width="400" height="450">
+                    <h4><a href="products.html">Lunar Lemon</a></h4>
                 </div>
 
-                <div id="product-3" class="product-box">
-                    <div class="box-color-1"></div>
-                    <h2>Orange Blast</h2>
+                <div id="product-3" class="product-box box-color3">
+                    <img src="img/multi-drink.jpg" width="400" height="450">
+                    <h4><a href="products.html">Orange Blast</a></h4>
                 </div>
 
-                <div class="button"><a href="#">View More</a></div>
-
+                <input name="submit" type="submit" value="View More">
             </section>
 
             <section id="about-us" class="grid">
 
-                <h2 class="hidden">About Us</h2>
+                <h3 class="hidden">About Us</h3>
 
-                <div id="bg-image"></div>
+                <div id="bg-image">
+                    <img src="img/pouring-drinks.jpg" alt="a drink being poured" width="1700" height="760">
+                </div>
 
                 <div id="about-text" class="grid">
-                    <h2>We've had some upgrades</h2>
+                    <h4>We've had some upgrades</h4>
                     <p>Lorem ipsum dolor sit amet,
                         consetetur sadipscing elitr, sed diam
                         nonumy eirmod tempor invidunt ut
@@ -86,21 +97,21 @@
                         dolores et ea rebum. Stet clita kasd
                         gubergren, no sea takimata sanctus
                         est Lorem ipsum dolor sit amet.</p>
+                    <input name="submit" type="submit" value="Learn More">
                 </div>
-
-                <div class="button"><a href="#">Learn More</a></div>
 
             </section>
 
             <section id="partner-brands" class="grid">
-                <h2 class="hidden">Brand Affiliates</h2>
-                <h3>"My addiction to this drink is stronger than my addiction to cocaine."</h3>
+                <h3 class="hidden">Brand Affiliates</h3>
+                <h4>"My addiction to this drink is stronger than my addiction to cocaine."</h4>
                 <p>- John Belushi</p>
+                <br>
                 <div class="brands">
-                    <div id="brand-1"></div>
-                    <div id="brand-2"></div> 
-                    <div id="brand-3"></div> 
-                    <div id="brand-4"></div> 
+                        <img src="img/McD-logo.png" alt="McDonalds Logo" width="320" height="206">
+                        <img src="img/Wendys-logo.png" alt="Wendys Logo" width="320" height="246">
+                        <img src="img/BurgerKing-logo.png" alt="Burger Logo" width="280" height="266">
+                        <img src="img/AW-logo.png" alt="A&W Logo" width="360" height="236">
                 </div>
             </section>
 
@@ -110,15 +121,22 @@
             <div id="main-footer" class="grid">
 
                 <div id="footer-contact">
-                    <h2>Contact Us</h2>
-                    <p>address</p>
-                    <p>phone number</p>
-                    <p>email</p>
-                    <div id="social-media"></div>
+                    <h3>Contact Us</h3>
+                    <p>123 Place St.,
+                        City, PR, H0H 0H0
+                        Canada</p>
+                    <p>(123) 456-7890</p>
+                    <p>nohelp@orbitz.com</p>
+                    <div id="social-media">
+                        <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="42" height="42"></a>
+                        <a id="fsacebook" href="#"><img src="img/facebook-logo.png"          alt="facebook logo" width="42" height="42"></a>
+                        <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="42" height="42"></a>
+                        <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="42" height="42"></a>
+                    </div>
                 </div>
 
                 <div id="footer-links">
-                    <h2>Quick Links</h2>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -127,10 +145,15 @@
                     </ul>
                 </div>
 
-                <div id="newsletter"></div>
-                <h2>Thirsty for more?</h2>
+                <div id="newsletter">
+                <h4>Thirsty for more?</h4>
                 <p>Quench your thirst with regular updates delivered stright to your inbox!</p>
-                <input type="text" id="email" name="emailaddress" placeholder="Email Address">
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" placeholder="Enter your email here..">
+                    <br>
+                    <input name="submit" type="submit" value="SIGN ME UP!">
+                </form>
+                </div>
             </div>
         </footer>
 
