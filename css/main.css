@@ -345,6 +345,29 @@ the grid using CSS. It is a class becasue we will use multiple grids */
 
 /* 7. ---Brand Affiliates--- */
 
+#partner-brands {
+    height: 707px;
+    background-color: #FFFDCF;
+}
+
+#partner-brands h4 {
+    grid-column: 2/10;
+    font-size: 58px;
+    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#partner-brands p {
+    grid-column: 10/12;
+    padding-top: 250px;
+    font-size: 36px;
+}
+
+.brands {
+    display: inline;
+    grid-column: 1/-1;
+    margin-left: 122px;
+    letter-spacing: 75px;
+}
 
 
 /* 8. ---Footer--- */
