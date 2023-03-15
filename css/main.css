@@ -414,7 +414,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     transition: all 200ms ease-in;
 }
 
-#footer-links h4 {
+#footer-links h3 {
     margin-left: 38px;
     font-size: 42px;
 }
@@ -425,7 +425,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     color: #fff;
 }
 
-#newsletter h4 {
+#newsletter h3 {
     margin-top: 55px;
     font-size: 56px;
 }
@@ -479,7 +479,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     align-items: center;
 }
 
-#product-con h2 {
+#product-con h3 {
     grid-column: 5/11;
     padding-top: 50px;
     text-align: center;
@@ -493,7 +493,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     margin-left: 100px;
 }
 
-#product-1-shop h3 {
+#product-1-shop h4 {
     font-size: 36px;
     color: red;
 }
@@ -518,7 +518,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     margin-left: 70px;
 }
 
-#product-2-shop h3 {
+#product-2-shop h4 {
     font-size: 36px;
     color: rgb(170, 170, 0);
 }
@@ -543,7 +543,7 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     margin-left: 20px;
 }
 
-#product-3-shop h3 {
+#product-3-shop h4 {
     font-size: 36px;
     color:rgb(204, 133, 0);
 }
