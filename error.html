@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Orbitz Official Website</title>
@@ -7,66 +8,80 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Rajdhani:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <div id="container">
-
-        <div id="header-con" class="grid">
-            <div id="logo">
-                <img src="img/Orbitz-logo-full.svg" alt="Orbitz-logo-full">
-            </div>
-            <div id="main-nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="social-media">
-
-            </div>
+    <header id="header-con" class="grid-con col-span-full">
+        <div id="logo" class="col-span-1 m-col-span-4 l-col-span-2">
+            <a id="orbitz-logo" href="index.html"><img src="img/Orbitz-logo-cut.png" alt="Orbitz-logo"></a>
+        </div>
+        <div id="main-nav" class="col-start-4 col-end-5 m-col-start-10 m-col-end-13 l-col-start-3 l-col-end-10">
+            <a class="hamburger" href="#"><img src="img/Hamburger_icon.svg.png" alt="hamburger menu"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="products.html"><b>Products</b></a></li>
+                    <li><a href="about-us.html"><b>About Us</b></a></li>
+                    <li><a href="team.html"><b>Our Team</b></a></li>
+                    <li><a href="support.html"><b>Support</b></a></li>
+                </ul>
+            </nav>
         </div>
 
-        <main>
-           <h2>404 ERROR</h2>
-           <p>This page doesn't exist! Or it used to but was swallowed by a black hole.</p>
-        </main>
+        <div id="social-media" class="l-col-start-10 l-col-end-13">
+            <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="52" height="52"></a>
+            <a id="facebook" href="#"><img src="img/facebook-logo.png" alt="facebook logo" width="52" height="52"></a>
+            <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="52" height="52"></a>
+            <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="52" height="52"></a>
+        </div>
 
-        <footer>
-            <div id="main-footer" class="grid">
-
-                <div id="footer-contact">
-                    <h2>Contact Us</h2>
-                    <p>address</p>
-                    <p>phone number</p>
-                    <p>email</p>
-                    <div id="social-media"></div>
-                </div>
-
-                <div id="footer-links">
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-
-                <div id="newsletter"></div>
-                <h2>Thirsty for more?</h2>
-                <p>Quench your thirst with regular updates delivered stright to your inbox!</p>
-                <input type="text" id="email" name="emailaddress" placeholder="Email Address">
-            </div>
-        </footer>
+    </header>
 
     </div>
-    
+    </div>
+
+    <main>
+        <h2>404 ERROR</h2>
+        <p>This page doesn't exist! Or it used to but was swallowed by a black hole.</p>
+    </main>
+
+    <footer>
+        <div id="main-footer" class="grid-con">
+
+            <div id="footer-contact" class="l-col-span-3">
+                <h2>Contact Us</h2>
+                <p>123 Place St.,
+                    City, PR, H0H 0H0
+                    Canada</p>
+                <p>(123) 456-7890</p>
+                <p>nohelp@orbitz.com</p>
+            </div>
+
+            <div id="footer-links" class="l-col-start-5 l-col-end-7">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            
+            <div id="newsletter" class="grid-con col-span-full l-col-start-8 l-col-end-13">
+                <h2>Thirsty for more?</h2>
+                <p>Quench your thirst with regular updates delivered to your inbox!</p>
+                <input type="text" id="email" name="emailaddress" placeholder="Email Address" class="l-col-span-full">
+                <a class="button-2 l-col-span-full" href="#">Sign Me Up!</a>
+            </div>
+        </div>
+    </footer>
+
+
+
     <script src="js/main.js"></script>
 </body>
+
 </html>

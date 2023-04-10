@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Orbitz Official Website</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Rajdhani:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header-con" class="grid-con col-span-full">
+        <div id="logo" class="col-span-1 m-col-span-4 l-col-span-2">
+            <a id="orbitz-logo" href="index.html"><img src="img/Orbitz-logo-cut.png" alt="Orbitz-logo"></a>
+        </div>
+        <div id="main-nav" class="col-start-4 col-end-5 m-col-start-10 m-col-end-13 l-col-start-3 l-col-end-10">
+            <a class="hamburger" href="#"><img src="img/Hamburger_icon.svg.png" alt="hamburger menu"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="products.html"><b>Products</b></a></li>
+                    <li><a href="about-us.html"><b>About Us</b></a></li>
+                    <li><a href="team.html"><b>Our Team</b></a></li>
+                    <li><a href="support.html"><b>Support</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="social-media" class="l-col-start-10 l-col-end-13">
+            <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="52" height="52"></a>
+            <a id="facebook" href="#"><img src="img/facebook-logo.png" alt="facebook logo" width="52" height="52"></a>
+            <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="52" height="52"></a>
+            <a id="linkedin" href="#"><img src="img/linkedin-logo.png" alt="linkedin logo" width="52" height="52"></a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="grid-con" id="contact">
+            <h2 class="hidden">Contact Us</h2>
+            <div id="contact-text" class="col-span-full l-col-start-3 l-col-end-6">
+                <h2>Got an Other-Worldly question?</h2>
+                <p>Our team is always ready to assist you with any inquiries or comments you may have about our stellar
+                    beverage lineup. Whether you're a fan of our classic flavors or are curious about our latest cosmic
+                    creations, we're here to provide you with exceptional customer service. At Orbitz, we believe in
+                    crafting quality drinks that not only taste amazing, but also transport you to the depths of the
+                    galaxy with each sip. Contact us today to learn more about our celestial brand, our products, and
+                    how we can help you stay refreshed on your next intergalactic adventure!</p>
+            </div>
+            <div id="contact-form" class="grid-con">
+                <input type="text" id="name" name="firstname" placeholder="Full Name" class="col-span-full">
+                <input type="text" id="newsemail" name="newsletter" placeholder="Email Address" class="col-span-full">
+                <textarea id="subject" name="subject" placeholder="Message Here" class="col-span-full"></textarea>
+                <a href="#thanks" class="button l-col-span-full">Submit</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="main-footer" class="grid-con">
+
+            <div id="footer-contact" class="l-col-span-3">
+                <h2>Contact Us</h2>
+                <p>123 Place St.,
+                    City, PR, H0H 0H0
+                    Canada</p>
+                <p>(123) 456-7890</p>
+                <p>nohelp@orbitz.com</p>
+            </div>
+
+            <div id="footer-links" class="l-col-start-5 l-col-end-7">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div id="newsletter" class="grid-con col-span-full l-col-start-8 l-col-end-13">
+                <h2>Thirsty for more?</h2>
+                <p>Quench your thirst with regular updates delivered to your inbox!</p>
+                <input type="text" id="email" name="emailaddress" placeholder="Email Address" class="l-col-span-full">
+                <a class="button-2 l-col-span-full" href="#newsbox">Sign Me Up!</a>
+            </div>
+        </div>
+
+        <!-- Newsletter Thank YOu Message -->
+        <section class="news-des" id="newsbox">
+            <h2 class="hidden">Newsletter Thank You</h2>
+            <!-- close button -->
+            <a href="" class="newsbox-close">x</a>
+
+            <article>
+                <h3 class="nl_heading">Thank you for signing up for our Orbitz newsletter!</h3>
+
+                <p class="nl_text">We're excited to have you join our interstellar community of beverage enthusiasts. You can expect to receive regular updates on our latest cosmic concoctions, promotions, and events.</p>
+
+            </article>
+
+        </section>
+    </footer>
+
+    <!-- Thank You messages -->
+    <section id="thanks" class="thanks-des">
+        <h2 class="hidden">Thank you message</h2>
+        <!-- close button -->
+        <a href="#" class="thanks-close">x</a>
+
+        <article>
+            <h3 class="ty_heading">Thank you for contacting us! Your message has been received and our team will get back to you shortly.</h3>
+
+            <p class="ty_text">We appreciate your patience as we work to address your inquiry. In the meantime, we hope you can sit back and enjoy the beauty of the cosmos.</p>
+
+        </article>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
