@@ -1,54 +1,10 @@
-/* 
-
-    CSS Guide
-
-    1. General Styles
-    2. Grid
-    3. Header
-    4. Main Hero Image
-    5. Features
-    6. Footer
-
-*/
-
 /* 1. ---General Styles--- */
-
 
 .hidden {
     display: none;
 }
 
-.box-color {
-    color: #fff;
-	background: rgba(0, 0, 0, 0.3);
-	margin: 0;
-}
-
-.box-color2 {
-    color: #fff;
-	background: rgba(155, 40, 40, 0.7);
-    height: 425px;
-	margin: 0;
-    border-radius: 10px;
-}
-
-.box-color3 {
-    color: #fff;
-	background: rgba(0, 0, 0, 0.7);
-    height: 50px;
-	margin: 0;
-    border-radius: 10px;
-}
-
-#container {
-    margin: 0 auto;
-    width: 1920px;
-    background-color: rgb(255, 255, 255);
-    border-color: black;
-    padding: 0 auto;
-}
-
-h1 h2 h3{
+h1 h2 h3 {
     font-family: 'Play', sans-serif;
 }
 
@@ -57,507 +13,1097 @@ p {
 }
 
 a {
-	text-decoration: none;
-}
-
-.title-line {
-	display: none;
-}
-
-/* 2. ---Grid--- */
-
-/* this is the exact same grid used in Adobe XD, we have recreated 
-the grid using CSS. It is a class becasue we will use multiple grids */
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(12, 122px);
-	grid-column-gap: 16px;
-}
-
-/* 3. ---Header--- */
-
-#header-con {
-    grid-column: 1/-1;
-    background-color: rgb(218, 255, 255);
-}
-
-#logo {
-    grid-column: 2/4;
-    margin: 10px;
-}
-
-#logo img {
-    position: absolute;
-    width: 265px;
-    height: 90.75px;
-}
-
-#main-nav {
-	grid-column: 4/11;
+    display: inline-block;
+    padding: 0 auto;
+    margin: 0 auto;
+    justify-self: center;
+    font-family: 'Play';
+    color: antiquewhite;
+    text-decoration: none;
     text-align: center;
-	padding-bottom: 0;
-	margin-bottom: 0;
-    margin-left: 50px;
-	margin-top: 50px;
 }
 
-#main-nav ul li {
-	display: inline;
-	margin-right: 60px;
-    padding-bottom: 10px;
-	font-size: 25px;
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+/* Index Guides */
+
+@media screen and (min-width: 360px) {
+
+    /* ---Header--- */
+
+    #header-con {
+        background-color: #d6f9ff;
+    }
+
+    #logo img {
+        margin: 10px;
+    }
+
+    #main-nav {}
+
+    #main-nav img {
+        width: 80px;
+    }
+
+    #social-media{ display: none; }
+
+    #main-nav nav { display: none; }
+
+    /* ---Main Hero Image--- */
+
+    #hero {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #hero-image img {
+        width: fit-content;
+        margin: 0px;
+    }
+
+    #hero-text {
+        background-color: #fffed5;
+        padding-bottom: 20px;
+    }
+
+    #hero-text h3 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-family: Play;
+        color: #d85c38;
+    }
+
+    #hero-text h2 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        font-family: Play;
+        font-size: 65px;
+        color: #d85c38;
+    }
+
+    #hero-text p {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        color: #292e56;
+        font-size: 20px
+    }
+
+
+
+    /* ---Products--- */
+
+    #products {
+        background-color: #fffed5;
+    }
+
+    #products h2 {
+        font-size: 35px;
+        font-family: play;
+        color: #d85c38;
+        margin-bottom: 5%;
+    }
+
+    .product-box {
+        background-color: thistle;
+        height: 200px;
+    }
+
+    .product-box h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    .button {
+        background-color: #d85c38;
+        justify-self: center;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: content-box;
+        height: 20px
+    }
+
+    .button:hover {
+        background-color: transparent;
+        border-style: solid;
+        border-color: #d85c38;
+        transition: 0.3s;
+    }
+
+    #product-1 {
+        background-color: #292e56;
+        background-image: url("../img/red-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-1 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: maroon;
+        background: rgba(238, 122, 122, 0.7);
+        text-align: center;
+    }
+
+    #product-2 {
+        background-color: #292e56;
+        background-image: url("../img/yellow-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-2 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: teal;
+        background: rgba(255, 215, 53, 0.7);
+        text-align: center;
+    }
+
+    #product-3 {
+        background-color: #292e56;
+        background-image: url("../img/multi-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-3 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #d85c38;
+        background: rgba(255, 181, 135, 0.7);
+        text-align: center;
+    }
+
+
+
+    /* ---About Us--- */
+
+    #about-us {
+        background-image: url("../img/about-us_bg.jpg");
+        background-size: cover;
+        background-color: #292e56;
+        height: 500px;
+        margin: 0;
+    }
+
+    #about-us h2 {
+        font-family: play;
+        color: white;
+        font-size: 45px;
+        margin: 20px;
+    }
+
+    #about-us p {
+        font-family: rajdhani;
+        color: white;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    #about-us h2 p {
+        background: rgba(255, 181, 135, 0.7);
+    }
+
+
+
+    /* ---Brand Affiliates--- */
+
+    #partner-brands {
+        background-color: #ffe8cb;
+    }
+
+    #partner-brands h3 {
+        font-family: rajdhani;
+        padding: 30px;
+        padding-bottom: 0px;
+        font-size: 40px
+    }
+
+    #partner-brands p {
+        margin: 40px;
+        font-size: 20px;
+    }
+
+    #brands {
+        justify-self: center;
+
+    }
+
+    .brand-logo {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .brand-logo img {
+        width: 200px;
+    }
+
+
+    /* ---Footer--- */
+
+    #main-footer {
+        background-color: #292e56;
+    }
+
+    #footer-links { display: none;}
+    #footer-contact { display: none; }
+
+    #main-footer h2 {
+        color: white;
+        grid-column: 1/-1;
+        font-family: rajdhani;
+        font-size: 40px;
+        margin: 30px;
+        justify-self: center;
+    }
+
+    #main-footer p {
+        grid-column: 1/-1;
+        color: white;
+        color: white;
+        grid-column: 1/-1;
+        font-family: rajdhani;
+        font-size: 20px;
+        margin: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    #email {
+        grid-column: 1/-1;
+        margin-top: 0px;
+        margin: 40px;
+        border-color: white;
+        color: #292e56;
+        padding-top: 0px;
+    }
+
+    input,
+    textarea {
+        background-color: #292e56;
+        color: white;
+    }
+
+    .button-2 {
+        background-color: #292e56;
+        border-style: solid;
+        border-color: #d6f9ff;
+        grid-column: 1/-1;
+        justify-self: center;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+        box-sizing: content-box;
+        height: 20px
+    }
+
+    .button-2:hover {
+        background-color: #d6f9ff;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #292e56;
+        transition: 0.3s;
+    }
 }
 
-#main-nav ul li a:hover {
-    border-bottom: 3px solid #21305F;
-    padding-bottom: 2px;
-	transition: all 200ms ease-in;
+@media screen and (min-width: 768px) {
+    
+    /* ---Header--- */
+
+    #header-con {
+        background-color: #d6f9ff;
+    }
+
+    #logo img {
+        margin: 10px;
+        width: 160px;
+    }
+
+    #social-media{ display: none; }
+
+    #main-nav nav { display: none; }
+
+    #main-nav img {
+        width: 120px;
+    }
+
+    /* ---Main Hero Image--- */
+
+    #hero {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #hero-image img {
+        width: 768px;
+        margin: 0px;
+    }
+
+    #hero-text {
+        background-color: #fffed5;
+        padding-bottom: 20px;
+    }
+
+    #hero-text h3 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-family: Play;
+        color: #d85c38;
+        font-size: 50px;
+    }
+
+    #hero-text h2 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        font-family: Play;
+        font-size: 90px;
+        color: #d85c38;
+    }
+
+    #hero-text p {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        color: #292e56;
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
+
+
+
+    /* ---Products--- */
+
+    #products {
+        background-color: #fffed5;
+    }
+
+    #products h2 {
+        font-size: 35px;
+        font-family: play;
+        color: #d85c38;
+        margin-bottom: 5%;
+    }
+
+    .product-box {
+        background-color: thistle;
+        height: 300px;
+    }
+
+    .product-box h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    .button {
+        background-color: #d85c38;
+        border-radius: 10%;
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+        box-sizing: content-box;
+        height: 20px;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        background-color: transparent;
+        border-style: solid;
+        border-color: #d85c38;
+        transition: 0.3s;
+    }
+
+    #product-1 {
+        background-color: #292e56;
+        background-image: url("../img/red-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-1 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: maroon;
+        background: rgba(238, 122, 122, 0.7);
+        text-align: center;
+    }
+
+    #product-2 {
+        background-color: #292e56;
+        background-image: url("../img/yellow-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-2 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: teal;
+        background: rgba(255, 215, 53, 0.7);
+        text-align: center;
+    }
+
+    #product-3 {
+        background-color: #292e56;
+        background-image: url("../img/multi-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-3 h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #d85c38;
+        background: rgba(255, 181, 135, 0.7);
+        text-align: center;
+    }
+
+
+
+    /* ---About Us--- */
+
+    #about-us {
+        background-image: url("../img/about-us_bg.jpg");
+        background-size: cover;
+        background-color: #292e56;
+        height: 650px;
+        margin: 0;
+    }
+
+    #about-us h2 {
+        font-family: play;
+        color: white;
+        font-size: 60px;
+        margin: 20px;
+    }
+
+    #about-us p {
+        font-family: rajdhani;
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+    }
+
+
+    /* ---Brand Affiliates--- */
+
+    #partner-brands {
+        background-color: #ffe8cb;
+    }
+
+    #partner-brands h3 {
+        font-family: rajdhani;
+        padding: 30px;
+        padding-bottom: 0px;
+        font-size: 50px
+    }
+
+    #partner-brands p {
+        margin: 40px;
+        font-size: 30px;
+    }
+
+    #brands {
+        justify-self: center;
+
+    }
+
+    .brand-logo {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .brand-logo img {
+        width: 200px;
+    }
+
+
+    /* ---Footer--- */
+
+    #main-footer {
+        background-color: #292e56;
+    }
+
+    #footer-links { display: none;}
+    #footer-contact { display: none; }
+
+    #main-footer h2 {
+        color: white;
+        font-family: rajdhani;
+        font-size: 50px;
+        margin: 30px;
+        justify-self: center;
+    }
+
+    #main-footer p {
+        grid-column: 1/-1;
+        color: white;
+        color: white;
+        grid-column: 1/-1;
+        font-family: rajdhani;
+        font-size: 30px;
+        margin: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    #email {
+        grid-column: 1/-1;
+        margin-top: 0px;
+        margin: 40px;
+        border-color: white;
+        color: #292e56;
+        padding-top: 0px;
+        font-size: 30px;
+    }
+
+    input,
+    textarea {
+        background-color: #292e56;
+        color: white;
+    }
+
+    .button-2 {
+        background-color: #292e56;
+        border-style: solid;
+        border-color: #d6f9ff;
+        justify-self: center;
+        text-align: center;
+        padding: 2%;
+        padding-bottom: 3%;
+        margin: 10px;
+        box-sizing: content-box;
+        height: 30px;
+        width: 300px;
+        font-size: 40px;
+    }
+
+    .button-2:hover {
+        background-color: #d6f9ff;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #292e56;
+        transition: 0.3s;
+    }
 }
 
-#main-nav ul a {
-    color: #21305F;
+@media screen and (min-width: 1200px) {
+     /* ---Header--- */
+
+     #header-con {
+        background-color: #d6f9ff;
+    }
+
+    #logo img {
+        margin: 10px;
+        width: 160px;
+    }
+
+    #main-nav nav { display: contents;}
+    #main-nav .hamburger { display: none;}
+
+    #social-media {
+        display: inline-block;
+    }
+    
+
+    #main-nav {
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    
+    #main-nav ul li {
+        display: inline;
+        margin-right: 60px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #main-nav ul li a:hover {
+        border-bottom: 3px solid #21305F;
+        padding-bottom: 2px;
+        transition: all 200ms ease-in;
+    }
+    
+    #main-nav ul a {
+        color: #21305F;
+    }
+    
+
+    /* ---Main Hero Image--- */
+
+    #hero {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    #hero-image {position: absolute;}
+
+    #hero-image img {
+        width: 1920px;
+        margin: 0px;
+    }
+
+    #hero-text {
+        background-color: rgba(254, 245, 205, 0.758);
+        padding-bottom: 20px;
+        z-index: 9999;
+        text-align: center;
+        justify-self: center;
+        width: 600px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        border-radius: 50px;
+    }
+
+    #hero-text h3 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-family: Play;
+        color: #d85c38;
+        font-size: 50px;
+    }
+
+    #hero-text h2 {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        font-family: Play;
+        font-size: 90px;
+        color: #d85c38;
+    }
+
+    #hero-text p {
+        padding-left: 25px;
+        padding-right: 20px;
+        margin: 0;
+        color: #292e56;
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
+
+
+
+    /* ---Products--- */
+
+    #products {
+        background-color: #fffed5;
+        position: relative;
+    }
+
+    #products h2 {
+        font-size: 35px;
+        font-family: play;
+        color: #d85c38;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .product-box {
+        width: 400px;
+        height: 500px;
+        border: 2px;
+        border-style: solid;
+        border-color: grey;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 40px;
+    }
+
+    .product-box h2 {
+        margin-top: 120px;
+        margin-bottom: 0px;
+        color: rgb(63, 63, 63);
+    }
+
+    .button {
+        background-color: #d85c38;
+        border-radius: 10%;
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+        box-sizing: content-box;
+        height: 20px;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        background-color: transparent;
+        border-style: solid;
+        border-color: #d85c38;
+        transition: 0.3s;
+    }
+
+    #product-1 {
+        background-color: #292e56;
+        background-image: url("../img/red-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-1 h2 {
+        margin-top: 415px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: maroon;
+        background: rgba(238, 122, 122, 0.7);
+        text-align: center;
+    }
+
+    #product-2 {
+        background-color: #292e56;
+        background-image: url("../img/yellow-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-2 h2 {
+        margin-top: 415px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: teal;
+        background: rgba(255, 215, 53, 0.7);
+        text-align: center;
+    }
+
+    #product-3 {
+        background-color: #292e56;
+        background-image: url("../img/multi-drink_mobile-crop.jpg");
+        background-size: cover;
+    }
+
+    #product-3 h2 {
+        margin-top: 415px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #d85c38;
+        background: rgba(255, 181, 135, 0.7);
+        text-align: center;
+    }
+    
+    #product-1 a:hover {
+        border-bottom: 3px solid rgb(204, 133, 0);
+        padding-bottom: 2px;
+        transition: all 200ms ease-in;
+    }
+    
+    #product-1 a {
+        color: #fff;
+    }
+    
+    #product-2 a:hover {
+        border-bottom: 3px solid rgb(204, 133, 0);
+        padding-bottom: 2px;
+        transition: all 200ms ease-in;
+    }
+    
+    #product-2 a {
+        color: #fff;
+    }
+    
+    #product-3 a:hover {
+        border-bottom: 3px solid rgb(204, 133, 0);
+        padding-bottom: 2px;
+        transition: all 200ms ease-in;
+    }
+    
+    #product-3 a {
+        color: #fff;
+    }
+
+    /* ---About Us--- */
+
+    #about-us {
+        background-image: url("../img/about-us_bg.jpg");
+        background-size: cover;
+        background-color: #292e56;
+        height: 650px;
+        margin: 0;
+    }
+
+    #about-us h2 {
+        font-family: play;
+        color: white;
+        font-size: 60px;
+        margin: 20px;
+    }
+
+    #about-us p {
+        font-family: rajdhani;
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    #about-text {
+        background-color: #6273a5;
+        background-blend-mode: multiply;
+        margin: 70px;
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+
+    /* ---Brand Affiliates--- */
+
+    #partner-brands {
+        background-color: #ffe8cb;
+    }
+
+    #partner-brands h3 {
+        font-family: rajdhani;
+        padding: 30px;
+        padding-bottom: 0px;
+        font-size: 50px;
+        margin: 70px;
+    }
+
+    #partner-brands p {
+        margin: 70px;
+        font-size: 30px;
+    }
+
+    #brands {
+        justify-self: center;
+
+    }
+
+    .brand-logo {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .brand-logo img {
+        width: 200px;
+    }
+
+
+    /* ---Footer--- */
+
+    #main-footer {
+        background-color: #292e56;
+    }
+
+    #main-footer h2 {
+        color: white;
+        font-family: rajdhani;
+        font-size: 50px;
+        margin: 30px;
+        text-align: left;
+    }
+
+    #main-footer p {
+        grid-column: 1/-1;
+        color: white;
+        color: white;
+        grid-column: 1/-1;
+        font-family: rajdhani;
+        font-size: 30px;
+        margin: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    #email {
+        margin-top: 0px;
+        margin: 40px;
+        border-color: white;
+        color: #292e56;
+        padding-top: 0px;
+        font-size: 30px;
+    }
+
+    input,
+    textarea {
+        background-color: #292e56;
+        color: white;
+    }
+
+    .button-2 {
+        background-color: #292e56;
+        border-style: solid;
+        border-color: #d6f9ff;
+        justify-self: center;
+        text-align: center;
+        padding: 2%;
+        padding-bottom: 3%;
+        box-sizing: content-box;
+        height: 30px;
+        width: 300px;
+        font-size: 40px;
+    }
+
+    .button-2:hover {
+        background-color: #d6f9ff;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #292e56;
+        transition: 0.3s;
+    }
+
+    #footer-contact {
+        margin-top: 50px;
+        color: #D7F9FF;
+        display:block;
+        text-align: left;
+    }
+    
+    #footer-contact h3 {
+        font-size: 42px;
+        text-align: left;
+    }
+    
+    #footer-contact p {
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    #footer-links {
+        margin-top: 32px;
+        color: #D7F9FF;
+        display: block;
+        text-align: left;
+    }
+    
+    #footer-links li {
+        list-style: none;
+        padding-bottom: 25px;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    #footer-links a {
+        color: #D7F9FF;
+    }
+    
+    #footer-links a:hover {
+        border-bottom: 3px solid #FFF;
+        padding-bottom: 2px;
+        transition: all 200ms ease-in;
+    }
+    
+    #footer-links h3 {
+        font-size: 42px;
+    }
+
+    #newsletter {margin: 0%; padding: 0%;}
+    
 }
+    
 
-#social-media {
-    grid-column: 11/-1;
-}
-#social-media img {
-    display: inline;
-    margin-top: 35px;
-}
+/* ---Product Page Specific--- */
 
-/* 4. ---Main Hero Image--- */
-
-#hero-image {
-	background: url("../img/SpaceDrinks.png");
-    width: 1920px;
-    height: 876px;
-}
-
-#hero-text {
-    height: 876px;
-}
-
-#hero-text2 {
-    margin-top: 200px;
-    grid-column: 6/10;
-}
-
-#hero-text2 h3 {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#hero-text2 h4 {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#hero-text2 p {
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#hero-text input[type="submit"] {
-    color: white;
-    background-color: darkgrey;
-    border: 3px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: grey;
-    grid-column: 7/9;
-    height: 50px;
-    font-size: 22px;
-    transition: all 200ms ease-in;
-}
-
-#hero-text input[type="submit"]:hover {
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-}
-
-/* 5. ---Products--- */
-
-#products {
-    background-color: #FFFDCF;
-    height: 780px;
-    grid-column: 1/-1;
-}
-
-#products h3 {
-    grid-column: 6/9;
-    text-align: center;
-    color: rgb(204, 133, 0);
-    font-size: 42px;
-    height: 38px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.product-box {
-    width: 400px;
-    height: 500px;
-    border: 2px;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 40px;
-}
-
-#product-1 {
-    grid-column: 2/4;
-    margin-left: 125px;
-}
-
-#product-1 a:hover {
-    border-bottom: 3px solid rgb(204, 133, 0);
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#product-1 a {
-    color: #fff;
-}
-
-
-#product-2 {
-    grid-column: 5/7;
-    margin-left: 132px;
-}
-
-#product-2 a:hover {
-    border-bottom: 3px solid rgb(204, 133, 0);
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#product-2 a {
-    color: #fff;
-}
-
-#product-3 {
-    grid-column: 8/11;
-    margin-left: 152px;
-}
-
-#product-3 a:hover {
-    border-bottom: 3px solid rgb(204, 133, 0);
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#product-3 a {
-    color: #fff;
-}
-
-#products input[type="submit"] {
-    text-align: center;
-    color: white;
-    background-color: rgb(204, 133, 0);
-    border: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: grey;
-    grid-column: 6/9;
-    height: 65px;
-    font-size: 32px;
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
-    transition: all 200ms ease-in;
-}
-
-#products input[type="submit"]:hover {
-    background-color: #fff;
-    color: rgb(204, 133, 0);
-    border-radius: 10px;
-}
-
-/* 6. ---About Us--- */
-
-#about-us {
-    height: 760px;
-    background-color: #32416d;
-}
-
-#bg-image {
-    margin-left: 110px;
-}
-
-#about-text {
-    grid-column: 8/-1;
-    margin-top: 100px;
-    height: 440px;
-    border-style: solid;
-    border: 3px;
-    border-color: grey;
-    border-radius: 10px;
-    background-color: rgb(218, 255, 255);
-}
-
-#about-text h4 {
-    grid-column: 1/5;
-    margin-left: 20px;
-    font-size: 54px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(204, 133, 0);
-    height: 50px;
-}
-
-#about-text p {
-    grid-column: 1/6;
-    margin-left: 20px;
-    font-size: 28px;
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#about-us input[type="submit"] {
-    text-align: center;
-    color: white;
-    background-color: rgb(204, 133, 0);
-    border: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: grey;
-    grid-column: 2/5;
-    margin-top: 50px;
-    height: 65px;
-    font-size: 32px;
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
-    transition: all 200ms ease-in;
-}
-
-#about-us input[type="submit"]:hover {
-    background-color: #fff;
-    color: rgb(204, 133, 0);
-    border-radius: 10px;
-}
-
-
-/* 7. ---Brand Affiliates--- */
-
-#partner-brands {
-    height: 707px;
-    background-color: #FFFDCF;
-}
-
-#partner-brands h4 {
-    grid-column: 2/10;
-    font-size: 58px;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#partner-brands p {
-    grid-column: 10/12;
-    padding-top: 250px;
-    font-size: 36px;
-}
-
-.brands {
-    display: inline;
-    grid-column: 1/-1;
-    margin-left: 122px;
-    letter-spacing: 75px;
-}
-
-
-/* 8. ---Footer--- */
-
-#main-footer {
-    height: 530px;
-    background-color: #202C59;
-    font-family: 'Rajdhani', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#footer-contact {
-    grid-column: 2/4;
-    margin-top: 50px;
-    color: #D7F9FF;
-}
-
-#footer-contact h3 {
-    font-size: 42px;
-}
-
-#footer-contact p {
-    font-size: 24px;
-}
-
-#footer-links {
-    grid-column: 5/7;
-    margin-top: 32px;
-    color: #D7F9FF;
-}
-
-#footer-links li {
-    list-style: none;
-    padding-bottom: 25px;
-    font-size: 24px;
-}
-
-#footer-links a {
-    color: #D7F9FF;
-}
-
-#footer-links a:hover {
-    border-bottom: 3px solid #FFF;
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#footer-links h3 {
-    margin-left: 38px;
-    font-size: 42px;
-}
-
-#newsletter {
-    grid-column: 9/-1;
-    margin-top: 25px;
-    color: #fff;
-}
-
-#newsletter h3 {
-    margin-top: 55px;
-    font-size: 56px;
-}
-
-#newsletter p {
-    font-size: 24px;
-}
-
-#newsletter input {
-	width: 450px;
-    padding: 12px;
-    border: 2px solid #d6d6d6;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    margin-bottom: 65px;
-    font: inherit;
-	transition: all 200ms ease-in;
-}
-
-#newsletter input {
-	font-size: 20px;
-}
-
-#newsletter input[type="submit"] {
-	width: 478px;
-	padding: 12px;
-	background-color: #94D8FF;
-	color: #202C59;
-	border: none;
-}
-
-#newsletter input[type="submit"]:hover {
-    background-color: #0E75B0;
-    border-radius: 10px;
-}
-
-/* Shop Page */
+@media screen and (min-width: 360px) {
 
 #product-con {
-    width: 1920px;
-    height: 1000px;
-    background-color: #ffffff;
-    font-family: 'Play', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fffed5;
+    justify-content: center;
 }
 
-.prod-img {
-    grid-column: 2/12;
-    margin-left: 200px;
-    padding-left: 30px;
-    letter-spacing: 70px;
-    align-items: center;
-}
-
-#product-con h3 {
-    grid-column: 5/11;
-    padding-top: 50px;
+#product-con h1 {
+    font-size: 70px;
+    font-family: play;
+    color: #d85c38;
+    margin: 30px;
     text-align: center;
-    font-size: 64px;
-    color: rgb(223, 146, 5);
 }
 
-#product-1-shop {
-    grid-column: 3/6;
+.product-showcase {
+    justify-content: center;
+}
+
+.product-showcase h2 {
     text-align: center;
-    margin-left: 100px;
+    margin-left: 30px;
+    font-family: Play;
+    color: #d85c38;
+    font-size: 40px;
 }
 
-#product-1-shop h4 {
-    font-size: 36px;
-    color: red;
+.product-showcase p {
+    margin: 30px;
+    color: #292e56;
+    font-size: 20px;
 }
 
-#product-1-shop p {
-    font-size: 18px
+.product-showcase img {
+    height: 300px;
+    width: 768px;
+    object-fit: cover;
 }
 
-#product-1-shop a:hover {
-    border-bottom: 3px solid;
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
 }
 
-#product-1-shop a {
-    color: red;
-}
+@media screen and (min-width: 768px) {
 
-#product-2-shop {
-    grid-column: 6/9;
-    text-align: center;
-    margin-left: 70px;
-}
+    #product-con {
+        background-color: #fffed5;
+        justify-content: center;
+    }
+    
+    #product-con h1 {
+        font-size: 70px;
+        font-family: play;
+        color: #d85c38;
+        margin: 30px;
+        text-align: center;
+    }
+    
+    .product-showcase {
+        justify-content: center;
+    }
+    
+    .product-showcase h2 {
+        text-align: center;
+        margin-left: 30px;
+        font-family: Play;
+        color: #d85c38;
+        font-size: 60px;
+    }
+    
+    .product-showcase p {
+        margin: 30px;
+        color: #292e56;
+        font-size: 35px;
+    }
 
-#product-2-shop h4 {
-    font-size: 36px;
-    color: rgb(170, 170, 0);
-}
-
-#product-2-shop p {
-    font-size: 18px
-}
-
-#product-2-shop a:hover {
-    border-bottom: 3px solid;
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#product-2-shop a {
-    color: rgb(170, 170, 0);
-}
-
-#product-3-shop {
-    grid-column: 9/12;
-    text-align: center;
-    margin-left: 20px;
-}
-
-#product-3-shop h4 {
-    font-size: 36px;
-    color:rgb(204, 133, 0);
-}
-
-#product-3-shop p {
-    font-size: 18px
-}
-
-#product-3-shop a:hover {
-    border-bottom: 3px solid;
-    padding-bottom: 2px;
-    transition: all 200ms ease-in;
-}
-
-#product-3-shop a {
-    color: rgb(204, 133, 0);
-}
+    .product-showcase img {
+        height: 300px;
+        width: 768px;
+        object-fit: cover;
+    }
+    
+    }
