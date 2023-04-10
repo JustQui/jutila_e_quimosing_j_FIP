@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Rajdhani:wght@400;500&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
     <header id="header-con" class="grid-con col-span-full">
@@ -23,15 +24,16 @@
             <a class="hamburger" href="#"><img src="img/Hamburger_icon.svg.png" alt="hamburger menu"></a>
             <nav>
                 <ul>
-                    <li><a href="#"><b>Home</b></a></li>
+                    <li><a href="index.html"><b>Home</b></a></li>
                     <li><a href="products.html"><b>Products</b></a></li>
-                    <li><a href="#"><b>About Us</b></a></li>
-                    <li><a href="#"><b>Support</b></a></li>
+                    <li><a href="about-us.html"><b>About Us</b></a></li>
+                    <li><a href="team.html"><b>Our Team</b></a></li>
+                    <li><a href="support.html"><b>Support</b></a></li>
                 </ul>
             </nav>
         </div>
 
-        <div id="social-media">
+        <div id="social-media" class="l-col-start-10 l-col-end-13">
             <a id="twitter" href="#"><img src="img/twitter-sign.png" alt="twitter logo" width="52" height="52"></a>
             <a id="facebook" href="#"><img src="img/facebook-logo.png" alt="facebook logo" width="52" height="52"></a>
             <a id="instagram" href="#"><img src="img/instagram-logo.png" alt="instgram logo" width="52" height="52"></a>
@@ -40,63 +42,112 @@
 
     </header>
 
-        <main>
+    <main>
 
-            <section id="product-con" class="grid-con">
-                <h1 class="col-span-full">SHOP</h1>
+        <section id="product-con" class="grid-con">
+            <h1 class="col-span-full">Check out our products!</h1>
 
-                <div class="product-showcase col-span-full">
-                    <img src="img/red-drink.jpg" alt="red strawbery flavoured drink" class="col-span-full">
+            <div class="product-showcase col-span-full l-col-span-4">
+                <a href="#prodbox" id="strawberry" data-product="strawberry"><img src="img/red-drink.jpg" alt="red strawbery flavoured drink" class="col-span-full"></a>
+
+                <div class="product-text">
                     <h2>STELLAR STRAWBERRY</h2>
-                    <p>Introducing Stellar Strawberry - the perfect blend of sweetness and tanginess that will leave your taste buds craving for more! Made with freshly-picked strawberries, this flavour is the perfect addition to your daily routine. Whether you enjoy it as a snack or a refreshing drink, Stellar Strawberry is sure to brighten up your day.</p>
-                </div>
-
-                <div class="product-showcase col-span-full">
-                    <img src="img/yellow-drink.jpg" alt="red strawbery flavoured drink">
-                    <h2>PINEAPPLE PROTONS</h2>
-                    <p>Get ready to blast off with Pineapple Protons - a flavour that's out of this world! Bursting with the tropical goodness of juicy pineapples, this flavour is perfect for those who want to add a little bit of sunshine to their day. With its refreshing and zesty taste, Pineapple Protons is sure to become your new favourite flavour.</p>
-                </div>
-
-                <div class="product-showcase col-span-full">
-                    <img src="img/multi-drink.jpg" alt="red strawbery flavoured drink">
-                    <h2>Orange Blast</h2>
-                    <p>Looking for a flavour that packs a punch? Look no further than Orange Blast! Made with the freshest oranges, this flavour is perfect for those who love a little bit of citrus in their life. With its tangy and refreshing taste, Orange Blast is the perfect way to start your day. So why wait? Give yourself an energy boost with this zesty flavour today!</p>
-                </div>
-            </section>
-          
-        </main>
-
-        <footer>
-            <div id="main-footer" class="grid-con">
-    
-                <div id="footer-contact" class="l-col-span-3">
-                    <h2>Contact Us</h2>
-                    <p>123 Place St.,
-                        City, PR, H0H 0H0
-                        Canada</p>
-                    <p>(123) 456-7890</p>
-                    <p>nohelp@orbitz.com</p>
-                </div>
-    
-                <div id="footer-links" class="l-col-start-5 l-col-end-7">
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                
-                <div id="newsletter" class="col-span-full l-col-start-8 l-col-end-13">
-                    <h2>Thirsty for more?</h2>
-                    <p>Quench your thirst with regular updates delivered to your inbox!</p>
-                    <input type="text" id="email" name="emailaddress" placeholder="Email Address">
-                    <a class="button-2" href="#">Sign Me Up!</a>
+                    <p>Introducing Stellar Strawberry - the perfect blend of sweetness and tanginess that will leave
+                        your taste buds craving for more! Made with freshly-picked strawberries, this flavour is the
+                        perfect addition to your daily routine. Whether you enjoy it as a snack or a refreshing drink,
+                        Stellar Strawberry is sure to brighten up your day.</p>
                 </div>
             </div>
-        </footer>
-    
+
+            <div class="product-showcase col-span-full l-col-span-4">
+                <a href="#prodbox" id="pineapple" data-product="pineapple"><img src="img/yellow-drink.jpg" alt="yellow pineapple flavoured drink"></a>
+
+                <div class="product-text">
+                    <h2>PINEAPPLE PROTONS</h2>
+                    <p>Get ready to blast off with Pineapple Protons - a flavour that's out of this world! Bursting with
+                        the tropical goodness of juicy pineapples, this flavour is perfect for those who want to add a
+                        little bit of sunshine to their day. With its refreshing and zesty taste, Pineapple Protons is
+                        sure to become your new favourite flavour.</p>
+                </div>
+            </div>
+
+            <div class="product-showcase col-span-full l-col-span-4">
+                <a href="#prodbox" id="orange" data-product="orange"><img src="img/multi-drink.jpg" alt="orange orange flavoured drink"></a>
+
+                <div class="product-text">
+                    <h2>ORANGE BLAST</h2>
+                    <p>Looking for a flavour that packs a punch? Look no further than Orange Blast! Made with the
+                        freshest oranges, this flavour is perfect for those who love a little bit of citrus in their
+                        life. With its tangy and refreshing taste, Orange Blast is the perfect way to start your day. So
+                        why wait? Give yourself an energy boost with this zesty flavour today!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="main-footer" class="grid-con">
+
+            <div id="footer-contact" class="l-col-span-3">
+                <h2>Contact Us</h2>
+                <p>123 Place St.,
+                    City, PR, H0H 0H0
+                    Canada</p>
+                <p>(123) 456-7890</p>
+                <p>nohelp@orbitz.com</p>
+            </div>
+
+            <div id="footer-links" class="l-col-start-5 l-col-end-7">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div id="newsletter" class="grid-con col-span-full l-col-start-8 l-col-end-13">
+                <h2>Thirsty for more?</h2>
+                <p>Quench your thirst with regular updates delivered to your inbox!</p>
+                <input type="text" id="email" name="emailaddress" placeholder="Email Address" class="l-col-span-full">
+                <a class="button-2 l-col-span-full" href="#newsbox">Sign Me Up!</a>
+            </div>
+        </div>
+
+        <!-- Newsletter Thank YOu Message -->
+        <section class="news-des" id="newsbox">
+            <h2 class="hidden">Newsletter Thank You</h2>
+            <!-- close button -->
+            <a href="" class="newsbox-close">x</a>
+
+            <article>
+                <h3 class="nl_heading">Thank you for signing up for our Orbitz newsletter!</h3>
+
+                <p class="nl_text">We're excited to have you join our interstellar community of beverage enthusiasts. You can expect to receive regular updates on our latest cosmic concoctions, promotions, and events.</p>
+
+            </article>
+
+        </section>
+    </footer>
+
+    <!-- lightbox goes here -->
+    <section class="prodbox-des" id="prodbox">
+        <h2 class="hidden">product info</h2>
+        <!-- close button -->
+        <a href="" class="prodbox-close">x</a>
+
+        <article>
+            <h3 class="pb_heading">heading</h3>
+
+            <p class="pb_text">info</p>
+
+        </article>
+
+    </section>
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
